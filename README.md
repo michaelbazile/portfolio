@@ -23,11 +23,13 @@ This repository contains the source code and assets for my personal software dev
 
 To run the website locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd portfolio`
-3. Install the dependencies: `npm install`
-4. Start the development server: `npm run dev`
-5. Open your browser and visit: `http://localhost:5173`
+1. Clone this repository:
+   - HTTPS: `https://github.com/michaelbazile/portfolio.git`
+   - SSH: `git@github.com:michaelbazile/portfolio.git`
+3. Navigate to the project directory: `cd portfolio`
+4. Install the dependencies: `npm install`
+5. Start the development server: `npm run dev`
+6. Open your browser and visit: `http://localhost:5173`
 
 ## Customization
 
