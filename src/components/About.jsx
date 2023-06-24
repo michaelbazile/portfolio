@@ -43,14 +43,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-seconday text-[17px] max-w-3xl leading-[30px]"
       >
-        Experienced Software Engineer with a demonstrated history of working in
-        the computer software industry. Skilled in Databases, HTML, Amazon Web
-        Services (AWS), Object-Oriented Programming (OOP), and Cascading Style
-        Sheets (CSS). Strong engineering professional with a IBC Fundamentals of
-        JavaScript, Functional Programming, and Web Development Level 3 focused
-        in Computer Software Engineering from Operation Spark.
+        Highly skilled and dedicated Software Engineer with experience in full
+        stack development and a passion for creating robust and efficient
+        applications. Proficient in a wide range of programming languages,
+        frameworks, and tools, with a focus on JavaScript and its ecosystem.
+        Adept at collaborating with cross-functional teams to deliver
+        high-quality software solutions that meet client requirements. Strong
+        problem-solving and analytical skills, with a commitment to continuous
+        learning and staying up-to-date with industry trends. Excellent
+        communication and interpersonal abilities, facilitating effective
+        collaboration and seamless project execution.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-center gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

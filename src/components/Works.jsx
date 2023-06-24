@@ -67,13 +67,12 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Experienced Software Engineer with a demonstrated history of working
-          in the computer software industry. Skilled in Databases, HTML, Amazon
-          Web Services (AWS), Object-Oriented Programming (OOP), and Cascading
-          Style Sheets (CSS). Strong engineering professional with a IBC
-          Fundamentals of JavaScript, Functional Programming, and Web
-          Development Level 3 focused in Computer Software Engineering from
-          Operation Spark.{" "}
+          The following projects showcase my skills and experience by presenting
+          real-world examples of my work. Each project is accompanied by a brief
+          description and includes links to code repositories and live demos.
+          Through these projects, I demonstrate my ability to tackle complex
+          problems, adapt to different technologies, and effectively manage
+          project deliverables.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
@@ -85,4 +84,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");
