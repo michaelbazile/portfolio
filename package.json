@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd web && npm run dev & cd server && cd ../server && deno run --allow-net --allow-read  index.ts",
-    "test": "cd server && deno run --allow-net --allow-read test.ts"
+    "test": "cd server && deno run --allow-net --allow-read --unstable --watch --log-level=debug  test.ts"
   },
   "repository": {
     "type": "git",
