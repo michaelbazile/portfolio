@@ -28,6 +28,6 @@ router.get("/", (ctx) => {
 
 app.use(router.routes());
 app.use(router.allowedMethods());
-console.log("Server is running on http://localhost:443");
+console.log("Server is running on http://localhost:8081");
 
-await app.listen({ port: 443 });
+await app.listen({ port: 8081 });
