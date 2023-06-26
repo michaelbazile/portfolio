@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "top level scripting",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd web && npm run dev & cd server && cd ../server && deno run --allow-net --allow-read  index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbazile/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelbazile/portfolio/issues"
+  },
+  "homepage": "https://github.com/michaelbazile/portfolio#readme"
+}
