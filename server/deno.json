@@ -1,0 +1,8 @@
+{
+  "denoDir": "/Users/michaelbazile/Library/Caches/deno",
+  "modulesCache": "/Users/michaelbazile/Library/Caches/deno/deps",
+  "npmCache": "/Users/michaelbazile/Library/Caches/deno/npm",
+  "typescriptCache": "/Users/michaelbazile/Library/Caches/deno/gen",
+  "registryCache": "/Users/michaelbazile/Library/Caches/deno/registries",
+  "originStorage": "/Users/michaelbazile/Library/Caches/deno/location_data"
+}
