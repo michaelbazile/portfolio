@@ -4,7 +4,8 @@
   "description": "top level scripting",
   "main": "index.js",
   "scripts": {
-    "start": "cd web && npm run dev & cd server && cd ../server && deno run --allow-net --allow-read  index.ts"
+    "start": "cd web && npm run dev & cd server && cd ../server && deno run --allow-net --allow-read  index.ts",
+    "test": "cd server && deno run --allow-net --allow-read test.ts"
   },
   "repository": {
     "type": "git",
