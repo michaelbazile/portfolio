@@ -1,10 +1,32 @@
-import { Application, Router } from "https://deno.land/x/oak@v10.6.0/mod.ts";
+import {
+  Application,
+  Router,
+  Context,
+} from "https://deno.land/x/oak@v10.6.0/mod.ts";
 import { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
 
 const app = new Application();
 const router = new Router();
-// const viteAppDir = `../web/${Deno.cwd()}`;
-//
+
+// Custom middleware for logging requests
+app.use(async (ctx: Context, next) => {
+  const { method, url, headers } = ctx.request;
+  const startTime = Date.now();
+
+  // Log the incoming request
+  console.log(`Incoming request: ${method} ${url}`);
+  console.log("Headers:", headers);
+
+  // Wait for the request to be processed
+  await next();
+
+  const responseTime = Date.now() - startTime;
+
+  // Log the response status and time
+  console.log(`Response status: ${ctx.response.status}`);
+  console.log(`Response time: ${responseTime}ms`);
+});
+
 // CORS middleware
 app.use(oakCors());
 
@@ -21,5 +43,4 @@ app.use(async (ctx) => {
 
 // Start the server
 console.log("Server is running on http://localhost:8000");
-// console.log(viteAppDir);
 await app.listen({ port: 8000 });
