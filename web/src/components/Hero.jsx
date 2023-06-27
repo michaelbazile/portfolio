@@ -17,9 +17,11 @@ const Hero = () => (
           <span className="text-[#915eff]"> Michael</span>
         </h1>
         <p className={`${styles.heroSubText} mt-2 text-stone-300`}>
-          I develop full-stack web applications,
+          I develop robust full-stack web applications,
           <br className="sm:block hidden" />
-          user interfaces and 3D visuals.
+          design user-friendly interfaces, and deliver
+          <br className="sm:block hidden" />
+          impactful digital solutions..
         </p>
       </div>
     </div>
