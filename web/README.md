@@ -40,7 +40,6 @@ Feel free to customize the website to reflect your own personal style and conten
 To deploy the website on GitHub Pages:
 
 1. Edit the `homepage` field in the `package.json` file: `"homepage": "https://your-username.github.io/your-repo"`
-2. Run the build command: `npm run build`
 
 ## Contributions
 
