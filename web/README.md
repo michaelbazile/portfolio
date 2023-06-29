@@ -41,7 +41,6 @@ To deploy the website on GitHub Pages:
 
 1. Edit the `homepage` field in the `package.json` file: `"homepage": "https://your-username.github.io/your-repo"`
 2. Run the build command: `npm run build`
-3. Deploy the contents of the `build` folder to your GitHub repository's `gh-pages` branch.
 
 ## Contributions
 
