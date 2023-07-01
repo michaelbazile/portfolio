@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -7,6 +7,7 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState("false");
+  const pdfUrl = "../constants/MichaelBazileResume2023 copy.pdf";
 
   return (
     <nav
@@ -27,17 +28,40 @@ const Navbar = () => {
           </p>
         </Link>
         <ul className="list-square hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px font-medium cursor-pointer]`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            if (link.id === "work") {
+              return (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } font-poppins fonts-medium cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={pdfUrl} download>
+                    {link.title}
+                  </a>
+                </li>
+              );
+            } else
+              return (
+                <li
+                  key={link.id}
+                  className={`${
+                    active === link.title ? "text-white" : "text-secondary"
+                  } font-poppins fonts-medium cursor-pointer text-[16px]`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              );
+          })}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -52,20 +76,38 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins fonts-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
-              ))}
+              {navLinks.map((link) => {
+                if (link.id === "work") {
+                  return (
+                    <li
+                      key={link.id}
+                      className={`${
+                        active === link.title ? "text-white" : "text-secondary"
+                      } font-poppins fonts-medium cursor-pointer text-[16px]`}
+                      onClick={() => {
+                        setToggle(!toggle);
+                        setActive(link.title);
+                      }}
+                    >
+                      <a href={pdfUrl} download></a>
+                    </li>
+                  );
+                } else
+                  return (
+                    <li
+                      key={link.id}
+                      className={`${
+                        active === link.title ? "text-white" : "text-secondary"
+                      } font-poppins fonts-medium cursor-pointer text-[16px]`}
+                      onClick={() => {
+                        setToggle(!toggle);
+                        setActive(link.title);
+                      }}
+                    >
+                      <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
+                  );
+              })}
             </ul>
           </div>
         </div>
