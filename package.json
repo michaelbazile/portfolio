@@ -4,8 +4,9 @@
   "description": "top level scripting",
   "main": "index.js",
   "scripts": {
-    "start": "cd web && npm run dev & cd server && cd ../server && deno run --allow-net --allow-read  index.ts",
-    "test": "cd server && deno run --allow-net --allow-read --unstable --watch --log-level=debug  test.ts"
+    "test": "cd server && deno run --allow-net --allow-read --unstable --watch --log-level=debug  test.ts",
+    "start": "concurrently \"cd web && npm run dev\" \"cd server && deno run --allow-net --allow-read index.ts\"",
+    "stop": "pkill -f \"npm run dev\" && pkill -f \"deno run\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/michaelbazile/portfolio/issues"
   },
-  "homepage": "https://github.com/michaelbazile/portfolio#readme"
+  "homepage": "https://github.com/michaelbazile/portfolio#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
 }
