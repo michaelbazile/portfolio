@@ -29,6 +29,8 @@ import {
   operationspark,
 } from "../assets";
 
+const pdfUrl = "../../src/constants/MichaelBazileResume2023.pdf";
+
 export const navLinks = [
   {
     id: "about",
@@ -278,4 +280,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, pdfUrl };
