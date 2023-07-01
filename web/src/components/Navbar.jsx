@@ -7,7 +7,7 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState("false");
-  const pdfUrl = "../constants/MichaelBazileResume2023 copy.pdf";
+  const pdfUrl = "../constants/MichaelBazileResume2023.pdf";
 
   return (
     <nav
@@ -41,7 +41,7 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={pdfUrl} download>
+                  <a href={pdfUrl} download={"document.pdf"}>
                     {link.title}
                   </a>
                 </li>
@@ -89,7 +89,9 @@ const Navbar = () => {
                         setActive(link.title);
                       }}
                     >
-                      <a href={pdfUrl} download></a>
+                      <a href={pdfUrl} download={"document.pdf"}>
+                        {link.title}
+                      </a>
                     </li>
                   );
                 } else
