@@ -28,8 +28,8 @@ import {
   lookfarlabs,
   operationspark,
 } from "../assets";
-
-const pdfUrl = "../../src/constants/MichaelBazileResume2023.pdf";
+import pdfBase64 from "./pdfData";
+const pdfUrl = `data:application/pdf;base64,${pdfBase64}`;
 
 export const navLinks = [
   {

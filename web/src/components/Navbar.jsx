@@ -46,7 +46,7 @@ const Navbar = () => {
                   }}
                 >
                   <a
-                    href={"../../src/constants/MichaelBazileResume2023.pdf"}
+                    href={pdfUrl}
                     download={"MichaelBazileResume2023.pdf"}
                     onClick={handleDownloadClick}
                   >
@@ -98,7 +98,7 @@ const Navbar = () => {
                       }}
                     >
                       <a
-                        href={"../../src/constants/MichaelBazileResume2023.pdf"}
+                        href={"../assets/MichaelBazileResume2023.pdf"}
                         download={"MichaelBazileResume2023.pdf"}
                         onClick={handleDownloadClick}
                       >
