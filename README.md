@@ -28,18 +28,17 @@ To run the website locally, follow these steps:
    - SSH: `git@github.com:michaelbazile/portfolio.git`
 3. Navigate to the project directory: `cd portfolio`
 4. Install the dependencies: `npm install`
-5. Start the development server: `npm run dev`
-6. Open your browser and visit: `http://localhost:5173`
+3. Navigate to the web directory: `cd web`
+4. Install the dependencies: `npm install`
+5. Navigate to the project directory: `cd portfolio`
+6. Start the development server: ` npm run start`
+7. Open your browser and visit: `http://localhost:5173`
 
 ## Customization
 
 Feel free to customize the website to reflect your own personal style and content. You can modify the pages, update the project showcase, and enhance the design as per your requirements. Additionally, you can add more sections or features to the website to showcase your skills and achievements effectively.
 
-## Deployment
 
-To deploy the website on GitHub Pages:
-
-1. Edit the `homepage` field in the `package.json` file: `"homepage": "https://your-username.github.io/your-repo"`
 
 ## Contributions
 
