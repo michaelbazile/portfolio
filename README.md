@@ -6,7 +6,7 @@ This repository contains the source code and assets for my personal software dev
 
 - **Home**: Welcome page with a brief introduction and overview of my expertise.
 - **About**: Detailed information about my background, skills, and experience.
-- **Projects**: Showcase of my notable projects, including descriptions, technologies used, and links to live demos or repositories.
+<!-- - **Projects**: Showcase of my notable projects, including descriptions, technologies used, and links to live demos or repositories. -->
 - **Resume**: Downloadable version of my resume in PDF format.
 <!-- - **Blog**: Collection of articles or blog posts related to software development or technology. -->
 - **Contact**: Contact form and information to get in touch with me.
