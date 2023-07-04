@@ -20,6 +20,7 @@ This repository contains the source code and assets for my personal software dev
 - [Tailwindcdd](https://tailwindcss.com): CSS framework for responsive and mobile-first design.
 - [vite](https://vitejs.dev/): For bundling and serving the website locally.
 - [react-tilt] (https://www.npmjs.com/package/react-tilt): For the 3D tilt effect on the home page.
+- [framer-motion] (https://www.framer.com/motion/): For the animations on the home page.
 
 ## Getting Started
 
