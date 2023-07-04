@@ -18,6 +18,8 @@ This repository contains the source code and assets for my personal software dev
 - [React](https://reactjs.org/): JavaScript library for building the user interface.
 - [React Router](https://reactrouter.com/): For handling client-side routing and navigation.
 - [Tailwindcdd](https://tailwindcss.com): CSS framework for responsive and mobile-first design.
+- [vite](https://vitejs.dev/): For bundling and serving the website locally.
+- [react-tilt] (https://www.npmjs.com/package/react-tilt): For the 3D tilt effect on the home page.
 
 ## Getting Started
 
