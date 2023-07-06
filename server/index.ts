@@ -1,12 +1,7 @@
-import {
-  Application,
-  Router,
-  Context,
-} from "https://deno.land/x/oak@v10.6.0/mod.ts";
+import { Application, Context } from "https://deno.land/x/oak@v10.6.0/mod.ts";
 import { oakCors } from "https://deno.land/x/cors@v1.2.2/mod.ts";
 
 const app = new Application();
-const router = new Router();
 
 // Custom middleware for logging requests
 app.use(async (ctx: Context, next) => {
