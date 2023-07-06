@@ -29,6 +29,7 @@ import {
   operationspark,
 } from "../assets";
 import pdfBase64 from "./pdfData";
+
 const pdfUrl = `data:application/pdf;base64,${pdfBase64}`;
 
 export const navLinks = [
