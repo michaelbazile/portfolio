@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./tech/nodejs.png";
 import aws from "./tech/aws.png";
-import mobile from "./mobile.png";
 import web from "./tech/coding.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -36,7 +35,6 @@ import tripguide from "./tripguide.png";
 export {
   logo,
   backend,
-  mobile,
   web,
   github,
   menu,

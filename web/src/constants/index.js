@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   aws,
   web,
