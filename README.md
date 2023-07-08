@@ -22,6 +22,8 @@ This repository contains the source code and assets for my personal software dev
 - [react-tilt] (https://www.npmjs.com/package/react-tilt): For the 3D tilt effect on the home page.
 - [framer-motion] (https://www.framer.com/motion/): For the animations on the home page.
 - [emailjs-com] (https://www.emailjs.com/): For the contact form.
+- [deno] (https://deno.land/): For the backend.
+- [oak] (https://oakserver.github.io/oak/): For the backend.
 
 ## Getting Started
 
