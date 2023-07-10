@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../utils/motion";
 
+/*
+The SectionWrapper higher-order component (HOC) is designed to wrap other components 
+with framer-motion animations and provide additional styling. This documentation will 
+guide you through the usage and functionality of the SectionWrapper HOC.
+*/
+
 const SectionWrapper = (Component, idName) =>
   function HOC() {
     return (
