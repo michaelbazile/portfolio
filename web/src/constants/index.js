@@ -19,7 +19,6 @@ import {
   tesla,
   shopify,
   carrent,
-  jobit,
   tripguide,
   threejs,
   database,
