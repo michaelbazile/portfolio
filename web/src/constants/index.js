@@ -14,7 +14,6 @@ import {
   git,
   figma,
   docker,
-  shopify,
   carrent,
   threejs,
   database,
