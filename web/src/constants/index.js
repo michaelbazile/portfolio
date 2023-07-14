@@ -14,7 +14,6 @@ import {
   git,
   figma,
   docker,
-  carrent,
   threejs,
   database,
   humanapi,
