@@ -37,8 +37,10 @@ To run the website locally, follow these steps:
 4. Navigate to the web directory: `cd web`
 5. Install the dependencies: `npm install`
 6. Navigate to the project directory: `cd portfolio`
-7. Start the development server: ` npm run start`
+7. Start the web development server: ` npm run start`
 8. Open your browser and visit: `http://localhost:5173`
+9. Navigate to the server directory: `cd server`
+10. Start the server development server: `deno run --allow-net --allow-read index.ts`
 
 ## Customization
 
